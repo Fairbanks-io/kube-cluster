@@ -63,7 +63,7 @@ module.exports = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'github.com/fairbanks-io/',
+          href: 'https://github.com/fairbanks-io/',
           label: 'GitHub',
           position: 'right',
         },
