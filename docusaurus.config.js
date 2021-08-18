@@ -11,7 +11,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   url: 'https://fairbanks-io.github.io',
-  baseUrl: '/kube-cluster/',
+  baseUrl: '/',
   projectName: 'kube-cluster', // Usually your repo name.
   organizationName: 'Fairbanks-io', // Usually your GitHub org/user name.
   trailingSlash: false,
@@ -63,7 +63,7 @@ module.exports = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'github.com/fairbanks-io/',
+          href: 'https://github.com/fairbanks-io/',
           label: 'GitHub',
           position: 'right',
         },
