@@ -10,8 +10,11 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'Fairbanks-io', // Usually your GitHub org/user name.
+  url: 'https://fairbanks-io.github.io',
+  baseUrl: '/kube-cluster/',
   projectName: 'kube-cluster', // Usually your repo name.
+  organizationName: 'Fairbanks-io', // Usually your GitHub org/user name.
+  trailingSlash: false,
   themeConfig: {
     colorMode: {
       defaultMode: 'dark',
