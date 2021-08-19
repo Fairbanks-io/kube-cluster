@@ -81,19 +81,19 @@ module.exports = {
             },
             {
               label: 'Code Best Practices',
-              to: '/docs/intro',
+              to: '/docs/code-best-practices/intro',
             },
             {
               label: 'Containerization',
-              to: '/docs/intro',
+              to: '/docs/containerization/intro',
             },
             {
               label: 'Deployments',
-              to: '/docs/intro',
+              to: '/docs/deployments/intro',
             },
             {
               label: 'Automation',
-              to: '/docs/intro',
+              to: '/docs/automation/intro',
             },
             {
               label: 'More...',
