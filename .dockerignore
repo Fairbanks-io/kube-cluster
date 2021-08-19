@@ -8,3 +8,4 @@ LICENSE
 *.sample
 .env*
 .prettier*
+build
