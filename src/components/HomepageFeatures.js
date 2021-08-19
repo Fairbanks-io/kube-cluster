@@ -8,18 +8,20 @@ const FeatureList = [
     Svg: require('../../static/img/cloud.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Built using the latest in CNCF backend technologies, this setup allows
+        the entire cluster to be rebuilt anywhere at the click of a button.
+
+        Google Cloud, Azure, AWS, DigitalOcean, on-prem and more!
       </>
     ),
   },
   {
-    title: 'Enable GitOps',
+    title: 'Enable Continous Deployments',
     Svg: require('../../static/img/gitops.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Following GitOps principles allows the state of the cluster to be declared
+        and managed in GitHub and continuously reconciled with Kubernetes releases.
       </>
     ),
   },
@@ -28,8 +30,8 @@ const FeatureList = [
     Svg: require('../../static/img/automation.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Prevent user downtime and impact by utilizing k8s native rolling upgrades, 
+        post-release health checks and utilization based auto-scaling of deployments.
       </>
     ),
   },
