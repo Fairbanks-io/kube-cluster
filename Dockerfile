@@ -24,4 +24,5 @@ RUN /microscanner $MICROSCANNER_TOKEN --continue-on-failure
 FROM base as prod
 RUN ls -ltr /app
 RUN cat /app/package.json
-ENTRYPOINT ["npm", "run", "serve", "-- --port 8080", "--host 0.0.0.0"]
+RUN cat /app/docusaurus.config.js
+ENTRYPOINT ["npm", "run", "serve", "-- --build", "--port 8080", "--host 0.0.0.0"]
