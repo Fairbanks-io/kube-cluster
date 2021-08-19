@@ -2,9 +2,15 @@
 sidebar_position: 1
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Intro
 
-![kube-cluster](/img/main.svg)
+<p align="center">
+
+  <img width="300" src={useBaseUrl('/img/main.svg')} alt="kube-cluster-logo-alt"  />
+
+</p>
 
 With the introduction of the public cloud, the way software is developed has been undergoing significant change. Whereas in the past it was common to install services directly on bare-metal boxes in an on-prem data center, Docker and Kubernetes have transformed software deployment strategies.
 
