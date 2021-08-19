@@ -20,9 +20,12 @@ ADD https://get.aquasec.com/microscanner /
 RUN chmod +x /microscanner
 RUN /microscanner $MICROSCANNER_TOKEN --continue-on-failure
 
+# Build ENV
+FROM audit as build
+RUN npm run build
+RUN ls -ltr /app
+RUN ls -ltr /app/build
+
 # Production ENV
 FROM base as prod
-RUN ls -ltr /app
-RUN cat /app/package.json
-RUN cat /app/docusaurus.config.js
-ENTRYPOINT ["npm", "run", "serve", "-- --build", "--port 8080", "--host 0.0.0.0"]
+ENTRYPOINT ["npm", "run", "serve", "-- --port 8080", "--host 0.0.0.0"]
