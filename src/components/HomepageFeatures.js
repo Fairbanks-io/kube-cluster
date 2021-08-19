@@ -4,7 +4,7 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Cloud First',
+    title: 'Cloud First, Anywhere',
     Svg: require('../../static/img/cloud.svg').default,
     description: (
       <>
