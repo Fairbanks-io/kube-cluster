@@ -8,4 +8,4 @@ Want to dive even deeper on these topics? Checkout these Resources for links to 
 
 - [Books](books.md)
 - [Roadmaps](roadmaps.md)
-- [Videos](video.md)
+- [Videos](videos.md)
