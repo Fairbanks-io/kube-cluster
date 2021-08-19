@@ -31,7 +31,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Home | ${siteConfig.title}`}
+      title={`Home`}
       description="Documentation for Kubernetes cluster learnings">
       <HomepageHeader />
       <main>
