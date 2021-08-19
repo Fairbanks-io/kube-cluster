@@ -26,7 +26,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Auto Scaling and Remediation',
+    title: 'Auto-Scaling and Remediation',
     Svg: require('../../static/img/automation.svg').default,
     description: (
       <>
