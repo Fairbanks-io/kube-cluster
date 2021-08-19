@@ -11,19 +11,8 @@ USER node
 COPY --chown=node:node package*.json ./
 RUN npm install --no-optional --silent && npm cache clean --force > "/dev/null" 2>&1
 
-# Development ENV
-FROM base as dev
-ENV NODE_ENV=development
-ENV PATH=/app/node_modules/.bin:$PATH
-RUN npm install --no-optional --silent && npm cache clean --force > "/dev/null" 2>&1
-RUN npm run start
-
-# Source
-FROM base as source
-COPY --chown=node:node . .
-
 # Audit ENV
-FROM source as audit
+FROM base as audit
 USER root
 RUN npm audit --audit-level critical
 ARG MICROSCANNER_TOKEN
@@ -32,5 +21,5 @@ RUN chmod +x /microscanner
 RUN /microscanner $MICROSCANNER_TOKEN --continue-on-failure
 
 # Production ENV
-FROM source as prod
-RUN npm run serve -- --build --port 8080 --host 0.0.0.0
+FROM base as prod
+CMD ["npm", "run", "serve --", "--build", "--port 8080", "--host 0.0.0.0"]
