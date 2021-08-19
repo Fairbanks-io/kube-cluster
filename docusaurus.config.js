@@ -103,11 +103,11 @@ module.exports = {
           title: 'GitHub',
           items: [
             {
-              label: 'tf-iac-cluster',
+              label: 'Cluster Repo',
               href: 'https://github.com/Fairbanks-io/tf-iac-cluster',
             },
             {
-              label: 'flux-gitops-apps',
+              label: 'Apps Repo',
               href: 'https://github.com/Fairbanks-io/flux-gitops-apps',
             },
             {
@@ -127,10 +127,14 @@ module.exports = {
               label: 'CNCF',
               href: 'https://www.cncf.io/',
             },
+            {
+              label: 'Contact Us',
+              href: 'https://fairbanks.io',
+            }
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Fairbanks.io`,
+      copyright: `Copyright © ${new Date().getFullYear()} <a style="color: #fff; text-decoration: none;" href="https://fairbanks.io">Fairbanks.io</a>`,
     },
     prism: {
       theme: lightCodeTheme,
