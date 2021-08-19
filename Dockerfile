@@ -27,5 +27,5 @@ RUN ls -ltr /app
 RUN ls -ltr /app/build
 
 # Production ENV
-FROM base as prod
+FROM build as prod
 ENTRYPOINT ["npm", "run", "serve", "-- --port 8080", "--host 0.0.0.0"]
