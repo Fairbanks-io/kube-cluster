@@ -22,5 +22,7 @@ RUN /microscanner $MICROSCANNER_TOKEN --continue-on-failure
 
 # Production ENV
 FROM base as prod
-# RUN npm run serve -- --build --port 8080 --host 0.0.0.0
+RUN pwd
+RUN ls -ltr
+RUN ls -ltr /app
 ENTRYPOINT ["npm", "run", "serve", "-- --port 8080", "--host 0.0.0.0"]
