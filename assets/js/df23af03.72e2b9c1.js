@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkube_cluster=self.webpackChunkkube_cluster||[]).push([[164],{5494:function(e){e.exports=JSON.parse('{"allTagsPath":"/kube-cluster/blog/tags","slug":"hola","name":"hola","count":1,"permalink":"/kube-cluster/blog/tags/hola"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkube_cluster=self.webpackChunkkube_cluster||[]).push([[535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome","permalink":"/kube-cluster/blog/welcome"},{"title":"Hello","permalink":"/kube-cluster/blog/hello-world"},{"title":"Hola","permalink":"/kube-cluster/blog/hola"}]}')}}]);
