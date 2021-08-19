@@ -8,7 +8,7 @@ EXPOSE 8080
 RUN mkdir /app && chown -R node:node /app
 WORKDIR /app
 USER node
-COPY --chown=node:node package*.json ./
+COPY --chown=node:node . ./
 RUN npm install --no-optional --silent && npm cache clean --force > "/dev/null" 2>&1
 
 # Audit ENV
@@ -22,7 +22,6 @@ RUN /microscanner $MICROSCANNER_TOKEN --continue-on-failure
 
 # Production ENV
 FROM base as prod
-RUN pwd
-RUN ls -ltr
 RUN ls -ltr /app
+RUN cat /app/package.json
 ENTRYPOINT ["npm", "run", "serve", "-- --port 8080", "--host 0.0.0.0"]
