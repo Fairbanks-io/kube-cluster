@@ -1,4 +1,4 @@
-name: documentation
+name: Generate Documentation
 
 on:
   pull_request:
