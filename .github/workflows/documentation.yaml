@@ -11,11 +11,18 @@ jobs:
     if: github.event_name != 'push'
     runs-on: ubuntu-latest
     steps:
+      - uses: act10ns/slack@v1
+        with:
+          status: starting
+
       - uses: actions/checkout@v1
+
       - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
+
       - name: Test Build
+        id: test-build
         run: |
           if [ -e yarn.lock ]; then
             yarn install --frozen-lockfile
@@ -25,18 +32,33 @@ jobs:
             npm i
           fi
           npm run build
+
+      - uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+        if: always()
+
   gh-release:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
+      - uses: act10ns/slack@v1
+        with:
+          status: starting
+
       - uses: actions/checkout@v1
+
       - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
+
       - uses: webfactory/ssh-agent@v0.5.0
         with:
           ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
+
       - name: Release to GitHub Pages
+        id: update-github-pages
         env:
           USE_SSH: true
           GIT_USER: git
@@ -51,3 +73,9 @@ jobs:
             npm i
           fi
           npm run deploy
+
+      - uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+        if: always()
