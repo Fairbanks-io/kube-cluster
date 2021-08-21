@@ -33,4 +33,9 @@ CMD ["/main"]
 
 Note: Make sure to copy in certificates or you may get X509 errors when making https requests!
 
+Finally, the container can be launched like any other:
+```
+docker run -d -p 8000:8000  fairbanksio/gohttp
+```
+
 Utilizing static binaries can reduce Golang based Docker image files by as much as 10%!
