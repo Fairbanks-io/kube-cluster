@@ -4,8 +4,6 @@ sidebar_position: 2
 
 # Formatting
 
-Good layout has been proven time after time to make code more readable - and the time it takes to do it neatly ALWAYS repays itself many times over in the future.
-
 A well thought on project structure and properly formatted project will pay for itself many times over in the future. Additionally, clean code can make it easier to spot errors before they make their way into production.
 
 This is even more applicable as multiple people must understand what has been previously written and navigate their way around your code-base(s). 
