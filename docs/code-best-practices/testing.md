@@ -6,7 +6,7 @@ sidebar_position: 4
 
 ### Unit Tests
 
-Jest
+[Jest](https://jestjs.io/) is unit testing framework for React components.
 
 ### ESLint
 
