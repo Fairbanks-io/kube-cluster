@@ -4,13 +4,13 @@ sidebar_position: 5
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+# Golang
+
 <p align="center">
 
-  <img src={useBaseUrl('/img/golang.svg')} alt="golang-logo"  />
+  <img width="150px" src={useBaseUrl('/img/golang.svg')} alt="golang-logo"  />
 
 </p>
-
-# Golang
 
 ### Static Binaries
 
@@ -32,5 +32,10 @@ CMD ["/main"]
 ```
 
 Note: Make sure to copy in certificates or you may get X509 errors when making https requests!
+
+Finally, the container can be launched like any other:
+```
+docker run -d -p 8000:8000  fairbanksio/gohttp
+```
 
 Utilizing static binaries can reduce Golang based Docker image files by as much as 10%!
