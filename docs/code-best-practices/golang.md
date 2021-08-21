@@ -6,7 +6,7 @@ sidebar_position: 5
 
 ### Static Binaries
 
-One advantage of Golang is the ability to create a single executable for your application which results in very small docker images with a minimal attack footprint.
+One advantage of Golang is the ability to create a single executable for your application which results in very small Docker images with a minimal attack footprint.
 
 [GoHTTP](https://github.com/Fairbanks-io/GoHTTP) is one such app that uses this type of setup.
 
@@ -23,6 +23,6 @@ COPY . .
 CMD ["/main"]
 ```
 
-Make sure to copy in certificates or you may get X509 errors when making https requests!
+Note: Make sure to copy in certificates or you may get X509 errors when making https requests!
 
 Utilizing static binaries can reduce Golang based Docker image files by as much as 10%!
