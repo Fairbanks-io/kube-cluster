@@ -4,13 +4,13 @@ sidebar_position: 5
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+# Golang
+
 <p align="center">
 
-  <img src={useBaseUrl('/img/golang.svg')} alt="golang-logo"  />
+  <img width="150px" src={useBaseUrl('/img/golang.svg')} alt="golang-logo"  />
 
 </p>
-
-# Golang
 
 ### Static Binaries
 
