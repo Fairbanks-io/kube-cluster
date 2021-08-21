@@ -36,7 +36,7 @@ Golang Security Checker ([gosec](https://github.com/securego/gosec)) is a code s
 
 #### NPM Audit
 
-NPM offers an [audit]() functionality which can warn on and attempt to automatically fix vulnerable dependencies. It ships pre-packaged with NPM.
+NPM offers an [audit](https://docs.npmjs.com/cli/v7/commands/npm-audit) functionality which can warn on and attempt to automatically fix vulnerable dependencies. It ships pre-packaged with NPM.
 
 To invoke an audit and see a report of issues, run:
 ```
