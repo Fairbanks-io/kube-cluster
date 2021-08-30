@@ -12,7 +12,7 @@ Luckily, there are tools that can help with this automatically!
 
 ### Prettier
 
-[Prettier](https://prettier.io/) can be used to automatically format code to a particular style, which aids in readability of code and allows for quicker troubleshooting in the event of an impact requiring code review.
+[Prettier](https://prettier.io/) and the accompanying [VSCode plugin](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) can be used to automatically format code to a particular style, which aids in readability of code and allows for quicker troubleshooting in the event of an impact requiring code review.
 
 In VSCode, Prettier can automatically applying styles when a file is saved by adding the following to your profile settings (`%APPDATA%\Code\User\settings.json`):
 
@@ -28,6 +28,8 @@ In VSCode, Prettier can automatically applying styles when a file is saved by ad
   "editor.formatOnSave": false,
 }
 ```
+
+Note: It is important to disable YAML auto-formatting otherwise this will cause issues with Helm releases.
 
 ### ESLint
 
